@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    width: 380px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.clock {
+    margin: 20px 0;
+}
+
+#analogClock {
+    display: block;
+    margin: auto;   
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);   
+}
+
+.digital {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.countdown {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.ramadan {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+button {
+    background: #1abc9c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.collapsed {
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #16a085;
+    padding: 15px 25px;
+    border-radius: 10px;
+    display: none;
+    animation: fade 0.5s;
+}
+
+#detectCountdown {
+    color: #f1c40f;
+    margin-left: 5px;
+}
+
+#locationMethod {
+    font-size: 12px;
+    opacity: 0.8;
+    margin-top: 3px;   
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(20px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }   }
