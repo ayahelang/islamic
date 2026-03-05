@@ -284,13 +284,17 @@ function updateHijri() {
 updateHijri()
 
 
-
-
 // TOGGLE SCHEDULE
-document.getElementById("toggleSchedule")
-    .onclick = () => {
+document.getElementById("toggleSchedule").onclick = () => {
 
-        document.getElementById("schedule")
-            .classList.toggle("collapsed")
+    const el = document.getElementById("schedule")
+    const arrow = document.getElementById("arrow")
 
-    }
+    el.classList.toggle("open")
+
+    arrow.style.transform =
+        el.classList.contains("open")
+            ? "rotate(180deg)"
+            : "rotate(0deg)"
+
+}
