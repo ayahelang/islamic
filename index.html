@@ -4,63 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Prayer Time Countdown</title>
-
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-
     <div class="container">
-
         <h1>🕌 Prayer Time</h1>
-
         <div class="location">
             📍 <span id="location">Detecting location...</span>
             <span id="detectCountdown">(13)</span>
-            <div id="locationMethod"></div>      </div>
-
-        <div class="clock">
-
-            <canvas id="analogClock" width="200" height="200"></canvas>
-
-            <div class="digital">
-                <div id="digitalClock"></div>
-                <div id="date"></div>
-                <div id="hijri"></div>
-            </div>
-
+            <div id="locationMethod"></div>      
         </div>
-
-        <div class="countdown">
-
-            <h2>Next Prayer</h2>
-
-            <div id="nextPrayerName"></div>
-            <div id="countdown"></div>
-
-        </div>
-
-        <div class="ramadan">
-
-            <div>
-                Imsak
-                <span id="imsakTime"></span>
-            </div>
-
-            <div>
-                Buka
-                <span id="maghribTime"></span>
-            </div>
-
-        </div>
-
         <button id="toggleSchedule">📖 Jadwal Lengkap</button>
-
-        <div id="schedule" class="collapsed">
-
+        <div id="schedule" class="collapsed">        
             <table>
                 <thead>
                     <tr>
@@ -68,21 +25,37 @@
                         <th>Waktu</th>
                     </tr>
                 </thead>
-
                 <tbody id="prayerTable"></tbody>
-
             </table>
-
         </div>
-
+        <div class="clock">
+            <canvas id="analogClock" width="200" height="200"></canvas>
+            <div class="digital">
+                <div id="digitalClock"></div>
+                <div id="date"></div>
+                <div id="hijri"></div>
+            </div>
+        </div>
+        <div class="countdown">
+            <h2>Next Prayer</h2>
+            <div id="nextPrayerName"></div>
+            <div id="countdown"></div>
+        </div>
+        <div class="ramadan">
+            <div>
+                Imsak
+                <span id="imsakTime"></span>
+            </div>
+            <div>
+                Buka
+                <span id="maghribTime"></span>
+            </div>
+        </div>
     </div>
-
     <div id="popup" class="popup">
         ⏰ 5 menit lagi waktu sholat
     </div>
-
     <script src="script.js"></script>
-
 </body>
 
 </html>
